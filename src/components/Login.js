@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
-import Login_footer from './login/Login_footer'
-import Login_form from './login/Login_form'
+import LoginFooter from './login/LoginFooter'
+import LoginForm from './login/LoginForm'
 
 const Login = () => {
 
@@ -22,8 +22,8 @@ const Login = () => {
             />
           </div>
           
-          <Login_form/>
-          <Login_footer/>
+          <LoginForm/>
+          <LoginFooter/>
       </div>
        
     )

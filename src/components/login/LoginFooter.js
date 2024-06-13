@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Login_footer = () => {
+const LoginFooter = () => {
   return (
         <div className='w-fulll bg-black text-gray-300 pt-56 pb-12 text-sm'  >
           <p className='w-3/4 m-auto'>Questions? Call 000-800-919-1694</p>
@@ -23,4 +23,4 @@ const Login_footer = () => {
   )
 }
 
-export default Login_footer
+export default LoginFooter
