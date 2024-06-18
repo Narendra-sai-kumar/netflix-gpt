@@ -1,9 +1,9 @@
 export const loginValidate = ({email, password, firstName, lastName, mobileNumber, islogin}) => {
     const loginErrorObj = {};
-
+    console.log("firstName", firstName)
     if(!islogin){
-        const isfirstNameValid = 
-        /^[A-Za-z'-]{1,50}$/.test(firstName);
+        const isfirstNameValid = firstName.length>1
+        //^[A-Za-z'-]{1,50}$/.test(firstName);
         if(!isfirstNameValid) {
             loginErrorObj.firstNameError = "Please Enter First name."
         }
@@ -34,7 +34,7 @@ export const loginValidate = ({email, password, firstName, lastName, mobileNumbe
 
     
         const isPasswordValid = 
-        /^(?=.*\d.*)(?=.*[a-zA-Z].*)(?=.*[!#\$%&\?].*).{8,}$/.test(password);
+        /^(?=.*\d.*)(?=.*[a-zA-Z].*)(?=.*[!#\$%&\?@].*).{8,}$/.test(password);
         if(!isPasswordValid) {
             loginErrorObj.passwordError = "Please Enter password that contains atleast one letter, one digit, one special character and minimum of 8 characters long"
         }
