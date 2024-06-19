@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
-import Login from './Login.js'
-import Browse from './Browse.js'
+import Login from './login/Login.js'
+import Browse from './browse/Browse.js'
 import { Routes, Route } from 'react-router-dom'
 
 import { onAuthStateChanged } from 'firebase/auth'

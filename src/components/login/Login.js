@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import Header from './Header'
-import LoginFooter from './login/LoginFooter'
-import LoginForm from './login/LoginForm'
+import Header from '../Header'
+import LoginFooter from './LoginFooter'
+import LoginForm from './LoginForm'
 
 const Login = () => {
 

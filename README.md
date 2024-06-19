@@ -1,3 +1,7 @@
+# Live Link for Netflix-GPT  
+
+Netflix-GPT site is live at https://narendra-sai-kumar.github.io/netflix-gpt/ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

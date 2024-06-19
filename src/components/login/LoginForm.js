@@ -2,6 +2,7 @@ import React, {useState, useRef} from 'react'
 import {loginValidate} from '../../utils/loginValidate'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword , updateProfile} from "firebase/auth";
 import {auth} from '../../utils/firebase';
+import { UserAvatar } from '../../utils/constants';
 
 
 const LoginForm = () => {
@@ -32,7 +33,7 @@ const LoginForm = () => {
                 const user = userCredential.user;
 
                 updateProfile(auth.currentUser, {
-                    displayName: firstName.current?.value, photoURL: "https://tse2.mm.bing.net/th?id=OIP.7tlP1ph61ompULJdycVJlQHaHa&pid=Api&P=0&h=180"
+                    displayName: firstName.current?.value, photoURL: UserAvatar
                     }).then(() => {
 
                     }).catch((error) => {
