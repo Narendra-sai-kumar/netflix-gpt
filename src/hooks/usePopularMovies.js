@@ -18,6 +18,8 @@ const usePopularMovies = () => {
     dispatch(addPopularMovies(json.results));
   };
 
+  
+
   useEffect(() => {
     !popularMovies && getPopularMovies();
   }, []);
